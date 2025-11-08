@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBI INVESTIGASI - PELANGGARAN SISTEM FACEBOOK</title>
+    
+    <style>
+        /* FONT dan RESET */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* HEADER & JUDUL BERITA */
+        .fbi-header {
+            text-align: center;
+            border-bottom: 3px solid #0a2351;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .fbi-header h1 {
+            color: #b30000;
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+        
+        .fbi-header h2 {
+            color: #0a2351;
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+
+        /* GRID LAYOUT */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+        }
+
+        /* PANEL/KOTAK INFO */
+        .panel {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .panel h3 {
+            color: #0a2351;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 8px;
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+
+        /* PROFIL HACKER (Kiri) */
+        .hacker-profile {
+            background-color: #f7f7f7;
+            border: 2px solid #b30000;
+        }
+
+        .profile-image-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        #hacker-photo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 5px solid #b30000;
+            border-radius: 50%;
+            /* Hapus filter buram agar foto yang dimasukkan terlihat jelas */
+            filter: none; 
+        }
+
+        .profile-details p {
+            margin: 8px 0;
+            padding-left: 10px;
+            border-left: 3px solid #0a2351;
+        }
+
+        .unknown-data {
+            color: #b30000;
+            font-weight: bold;
+        }
+
+        .active-status {
+            color: #b30000;
+            font-weight: bold;
+        }
+
+        .message-box {
+            border-top: 1px dashed #ccc;
+            padding-top: 15px;
+            margin-top: 15px;
+            color: #555;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+        
+        /* LAPORAN UTAMA (Kanan) */
+        .report-content {
+            padding: 0;
+            border: none;
+        }
+
+        .news-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 5px solid #0a2351;
+            background-color: #f9f9f9;
+        }
+        
+        .news-item h4 {
+            color: #1c1e21;
+            font-size: 1.2em;
+            margin: 0 0 8px 0;
+            font-weight: 600;
+        }
+
+        .news-source {
+            display: block;
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .log-panel h3 {
+            background-color: #0a2351;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            border-bottom: none;
+        }
+        
+        .log-feed {
+            height: 250px;
+            overflow-y: scroll;
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+        }
+        
+        .log-entry {
+            margin: 3px 0;
+            color: #333;
+        }
+
+        .log-entry.error { color: #b30000; font-weight: bold; } 
+        .log-entry.warning { color: #cc6600; } 
+        .log-entry.success { color: #008000; } 
+        .log-entry.processing { color: #0a2351; }
+
+        /* FOOTER */
+        .fbi-footer {
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="fbi-header">
+            <h1>PERINGATAN ANCAMAN CYBER TERTINGGI</h1>
+            <h2>Laporan Investigasi: Pelanggaran Sistem Facebook oleh NV0ID7</h2>
+            <p>Divisi Kejahatan Siber FBI - Diperbarui: 08 November 2025</p>
+        </header>
+
+        <main class="main-grid">
+
+            <section class="hacker-profile panel">
+                <h3>PROFILE TARGET UTAMA (NV0ID7)</h3>
+                <div class="profile-image-container">
+                    <img id="hacker-photo" src="d24b7fa6-f091-4a26-bee3-569d7633b15b.jpeg" alt="Foto Profil Hacker Nvoid7">
+                </div>
+                
+                <div class="profile-details">
+                    <p><strong>ALIAS OPERASI:</strong> <span class="unknown-data">NV0ID7</span></p>
+                    <p><strong>NAMA ASLI:</strong> <span class="unknown-data">CLASSIFIED / UNKNOWN</span></p>
+                    <p><strong>LOKASI TERAKHIR:</strong> <span class="unknown-data">Jaringan TOR Anonim (IP Bergerak)</span></p>
+                    <p><strong>TINGKAT ANCAMAN:</strong> <span class="active-status">EKSTRIM (FBI LEVEL 5)</span></p>
+                    <p><strong>MOTIVASI:</strong> <span class="unknown-data">DIDUGA AGITASI POLITIK / SABOTASE</span></p>
+                </div>
+                
+                <div class="message-box">
+                    <p>INVESTIGATOR UTAMA: Agen Khusus Miller<br>UNIT: Task Force Delta-09</p>
+                </div>
+            </section>
+
+            <section class="report-content">
+                
+                <article class="news-item">
+                    <h4>FACEBOOK BREACH: RIBUAN AKUN WN AMERIKA TERKENA DAMPAK LANGSUNG</h4>
+                    <p>Penyelidikan FBI mengkonfirmasi bahwa lebih dari 25.000 akun warga negara Amerika di platform Meta telah diakses secara ilegal. Data pribadi, termasuk informasi kontak dan log komunikasi, diduga telah dicuri oleh peretas yang dikenal sebagai NV0ID7.</p>
+                    <span class="news-source">Sumber: Konferensi Pers Resmi FBI, Washington D.C.</span>
+                </article>
+                
+                <article class="news-item">
+                    <h4>PEMBARUAN TEKNIS: Vektor Serangan dan Enkripsi Masih Menjadi Hambatan</h4>
+                    <p>Server utama Facebook tetap berada dalam keadaan terenkripsi parsial. Tim forensik siber menghadapi tantangan besar dalam membalikkan protokol enkripsi kustom yang digunakan oleh pelaku. Vektor serangan awal dicurigai berasal dari kerentanan *Zero-Day*.</p>
+                    <span class="news-source">Update: 15 Menit Lalu</span>
+                </article>
+                
+                <div class="log-panel panel">
+                    <h3>LIVE OPERATIONAL FEED</h3>
+                    <div id="log-feed" class="log-feed">
+                        <p class="log-entry success">[19:45:01] **TASK FORCE D-09**: Memperoleh izin dekripsi sekunder.</p>
+                        <p class="log-entry warning">[19:45:15] **SISTEM META**: Ancaman persisten terdeteksi di server cadangan.</p>
+                        <p class="log-entry processing">[19:45:30] **FBI CYBER**: Meluncurkan alat penelusuran balik (back-trace) ke node TOR.</p>
+                        <p class="log-entry error">[19:45:45] **ALERT**: NV0ID7 telah mengubah kunci enkripsi! Kebutuhan dekripsi ulang.</p>
+                        <p class="log-entry success">[19:46:00] **TASK FORCE D-09**: 70% akun WN Amerika telah diisolasi dari sisa sistem.</p>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+        
+        <footer class="fbi-footer">
+            <p>&copy; 2025 Federal Bureau of Investigation - Semua hak dilindungi. Informasi ini untuk keperluan investigasi.</p>
+        </footer>
+    </div>
+
+    <script>
+        const logFeed = document.getElementById('log-feed');
+        logFeed.scrollTop = logFeed.scrollHeight;
+    </script>
+</body>
+</html>
